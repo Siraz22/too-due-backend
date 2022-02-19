@@ -1,9 +1,7 @@
 package com.example.backend.Task.GenericTask;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -22,5 +20,23 @@ public class GenericTaskController {
     @GetMapping(path="/getTasks")
     public List<GenericTask> getTasks(){
         return genericTaskService.getGenericTasks();
+    }
+
+    //POST
+    @PostMapping(path="/addTask")
+    public void putTask(@RequestBody GenericTask newGenericTask){
+        genericTaskService.addGenericTask(newGenericTask);
+    }
+
+    //DELETE
+    @DeleteMapping(path="/deleteTask/{id}")
+    public void deleteTask(@PathVariable("id") String id){
+        genericTaskService.deleteGenericTask(id);
+    }
+
+    //PUT or Update
+    @PutMapping(path="/updateTask/{id}")
+    public void updateTask(@PathVariable("id") String id, @RequestBody GenericTask updatedTask){
+        genericTaskService.updateGenericTask(id, updatedTask);
     }
 }

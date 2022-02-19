@@ -1,5 +1,6 @@
 package com.example.backend.Task.GenericTask;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
@@ -9,9 +10,16 @@ import javax.persistence.Table;
 public class GenericTask {
 
     @Id
+    @Column(name="id")
     public String id;
+
+    @Column(name="taskName")
     public String taskName;
+
+    @Column(name="priority")
     public String priority;
+
+    @Column(name="status")
     public String status;
 
     public GenericTask(String id, String taskName, String priority, String status) {
