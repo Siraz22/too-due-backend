@@ -13,7 +13,7 @@ public class GenericTask {
     @Column(name="id")
     public String id;
 
-    @Column(name="task")
+    @Column(name="taskName")
     public String taskName;
 
     @Column(name="priority")
