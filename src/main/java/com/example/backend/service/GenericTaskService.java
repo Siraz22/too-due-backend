@@ -1,5 +1,7 @@
-package com.example.backend.Task.GenericTask;
+package com.example.backend.service;
 
+import com.example.backend.domain.GenericTask;
+import com.example.backend.repo.GenericTaskRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -41,7 +43,4 @@ public class GenericTaskService {
         toBeUpdated.setPriority(updatedTask.getPriority());
         toBeUpdated.setStatus(updatedTask.getStatus());
     }
-
-
-
 }

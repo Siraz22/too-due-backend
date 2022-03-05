@@ -1,4 +1,4 @@
-package com.example.backend.Task.GenericTask;
+package com.example.backend.domain;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

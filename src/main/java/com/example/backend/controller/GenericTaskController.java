@@ -1,5 +1,7 @@
-package com.example.backend.Task.GenericTask;
+package com.example.backend.controller;
 
+import com.example.backend.service.GenericTaskService;
+import com.example.backend.domain.GenericTask;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
