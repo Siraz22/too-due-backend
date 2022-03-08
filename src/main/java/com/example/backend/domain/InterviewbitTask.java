@@ -13,9 +13,9 @@ public class InterviewbitTask {
     String id;
     @Column(name="question")
     String question;
-    @Column(name="name")
-    String difficulty;
     @Column(name="difficulty")
+    String difficulty;
+    @Column(name="link")
     String link;
     @Column(name="notes")
     String notes;
