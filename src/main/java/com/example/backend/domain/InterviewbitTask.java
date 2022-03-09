@@ -15,16 +15,13 @@ public class InterviewbitTask {
     String question;
     @Column(name="difficulty")
     String difficulty;
-    @Column(name="link")
-    String link;
     @Column(name="notes")
     String notes;
 
-    public InterviewbitTask(String id, String question, String difficulty, String link, String notes) {
+    public InterviewbitTask(String id, String question, String difficulty, String notes) {
         this.id = id;
         this.question = question;
         this.difficulty = difficulty;
-        this.link = link;
         this.notes = notes;
     }
 
@@ -44,10 +41,6 @@ public class InterviewbitTask {
         return difficulty;
     }
 
-    public String getLink() {
-        return link;
-    }
-
     public String getNotes() {
         return notes;
     }
@@ -64,10 +57,6 @@ public class InterviewbitTask {
         this.difficulty = difficulty;
     }
 
-    public void setLink(String link) {
-        this.link = link;
-    }
-
     public void setNotes(String notes) {
         this.notes = notes;
     }
@@ -78,7 +67,6 @@ public class InterviewbitTask {
                 "id='" + id + '\'' +
                 ", question='" + question + '\'' +
                 ", difficulty='" + difficulty + '\'' +
-                ", link='" + link + '\'' +
                 ", notes='" + notes + '\'' +
                 '}';
     }
