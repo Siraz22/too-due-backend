@@ -40,6 +40,7 @@ public class InterviewbitTaskService {
         InterviewbitTask toBeUpdated = interviewbitTaskRepository.findById(id).orElseThrow(()-> new IllegalStateException("such id doesn't exist"));
 
         toBeUpdated.setQuestion(updatedTask.getQuestion());
+        toBeUpdated.setLink(updatedTask.getLink());
         toBeUpdated.setNotes(updatedTask.getNotes());
         toBeUpdated.setDifficulty(updatedTask.getDifficulty());
     }
