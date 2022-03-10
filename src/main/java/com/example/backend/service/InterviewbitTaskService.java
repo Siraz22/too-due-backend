@@ -43,5 +43,6 @@ public class InterviewbitTaskService {
         toBeUpdated.setLink(updatedTask.getLink());
         toBeUpdated.setNotes(updatedTask.getNotes());
         toBeUpdated.setDifficulty(updatedTask.getDifficulty());
+        toBeUpdated.setCompleted(updatedTask.getCompleted());
     }
 }

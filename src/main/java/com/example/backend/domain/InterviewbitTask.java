@@ -19,13 +19,16 @@ public class InterviewbitTask {
     String link;
     @Column(name="notes")
     String notes;
+    @Column(name="completed")
+    Boolean completed;
 
-    public InterviewbitTask(String id, String question, String difficulty, String link, String notes) {
+    public InterviewbitTask(String id, String question, String difficulty, String link, String notes, Boolean done) {
         this.id = id;
         this.question = question;
         this.difficulty = difficulty;
         this.link = link;
         this.notes = notes;
+        this.completed = done;
     }
 
     public InterviewbitTask(){
@@ -46,6 +49,14 @@ public class InterviewbitTask {
 
     public String getLink() {
         return link;
+    }
+
+    public Boolean getCompleted(){
+        return completed;
+    }
+
+    public void setCompleted(Boolean completed){
+        this.completed = completed;
     }
 
     public String getNotes() {
@@ -80,6 +91,7 @@ public class InterviewbitTask {
                 ", difficulty='" + difficulty + '\'' +
                 ", link='" + link + '\'' +
                 ", notes='" + notes + '\'' +
+                ", completed'" + completed + '\'' +
                 '}';
     }
 }
