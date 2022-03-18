@@ -44,5 +44,6 @@ public class InterviewbitTaskService {
         toBeUpdated.setNotes(updatedTask.getNotes());
         toBeUpdated.setDifficulty(updatedTask.getDifficulty());
         toBeUpdated.setCompleted(updatedTask.getCompleted());
+        toBeUpdated.setTopic(updatedTask.getTopic());
     }
 }

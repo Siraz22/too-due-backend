@@ -26,4 +26,6 @@ public class InterviewbitTask {
     String notes;
     @Column(name="completed")
     Boolean completed;
+    @Column(name="topic")
+    String topic;
 }
