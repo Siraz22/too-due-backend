@@ -38,7 +38,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/react-api/genericTask/getTasks", "/react-api/interviewbitTask/getTasks").permitAll()
                 .anyRequest()
                 .authenticated()
-                .and().formLogin();
+                .and().httpBasic();
     }
 
     @Bean
