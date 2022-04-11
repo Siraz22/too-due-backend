@@ -11,7 +11,7 @@ import java.util.List;
 @Service
 public class GenericTaskService {
 
-    private GenericTaskRepository genericTaskRepository;
+    final private GenericTaskRepository genericTaskRepository;
 
     @Autowired
     public GenericTaskService(GenericTaskRepository genericTaskRepository){
